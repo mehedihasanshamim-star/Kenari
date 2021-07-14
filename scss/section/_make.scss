@@ -1,0 +1,40 @@
+.ken-make{
+    padding-top: 130px;
+    @media #{$medium_device}{
+        padding: 100px 20px;
+    }
+    @media #{$small_mobile}{
+        padding: 80px 20px;
+    }
+}
+.make-text{
+    .make-content{
+        margin: 34px 0 36px;
+        color: $secondary-color-3;
+    }
+    .make-btn{
+        @extend %common-btn;
+    }
+    @media #{$tab_device}{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    @media #{$large_mobile}{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    @media #{$small_mobile}{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+.make-img{
+    margin-right: -125px;
+    @media #{$large_small}{
+        margin-right: 0px;
+        text-align: center;
+    }
+    @media #{$tab_device}{
+        text-align: center;
+    }
+}

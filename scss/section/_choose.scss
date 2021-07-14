@@ -1,0 +1,36 @@
+.ken-choose-us{
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.choose-hadding{
+    margin-bottom: 75px;
+}
+.single-choose{
+    .choose-img{
+        height: 165px;
+        @media #{$large_mobile}{
+            height: 155px;
+        }
+    }
+    .choose-title{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @media #{$large_mobile}{
+            margin: 10px;
+        }
+    }
+    .choose-text{
+        color: $secondary-color-3;
+    }
+    @media #{$large_mobile}{
+        margin-bottom: 55px;
+    }
+    @media #{$small_mobile}{
+        margin-bottom: 50px;
+    }
+}
+@media #{$tab_device}{
+    .pt-md-40{
+        padding-top: 40px;
+    }
+}

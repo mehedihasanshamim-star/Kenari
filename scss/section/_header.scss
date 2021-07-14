@@ -1,0 +1,45 @@
+.ken-header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar{
+    padding-top: 28px;
+    padding-bottom: 34px;
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-weight: $font_bold;
+                color: $primary-color-2;
+                padding: 0.938rem;
+                transition: .4s;
+                &:hover{
+                    color: $primary-color-1;
+                }
+            }
+        }
+    }
+    .header-btn{
+        .btn-custom{
+            @extend %common-btn;
+            background-color: $secondary-color-1;
+            &:nth-child(2){
+                background-color: $secondary-color-2;
+                &:hover{
+                    background-color: $secondary-color-5;
+                }
+            }
+        }
+        @media #{$small_mobile}{
+            text-align: center;
+        }
+        @media #{$large_mobile}{
+            text-align: center;
+        }
+        @media #{$tab_device}{
+            text-align: center;
+        }
+    }
+}
+  

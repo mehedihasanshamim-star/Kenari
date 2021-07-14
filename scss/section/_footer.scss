@@ -1,0 +1,188 @@
+.ken-footer{
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1140px;
+    position: relative;
+    @media #{$tab_device}{
+        height: 1160px;
+    }
+    @media #{$large_mobile}{
+        height: 1160px;
+    }
+    @media #{$small_mobile}{
+       height: 1510px;
+    } 
+}
+.sign-up-box{
+    background-color: #fff;
+    padding:57px 50px;
+    border-radius: 10px;
+    margin-top: -94px;
+    box-shadow: 0px 15px 26px 0px rgba(94,94,94,0.26);
+    
+    .sign-up-title{
+        margin-bottom: 40px;
+    }
+    .sign-up-content{
+        font-size: 1rem;
+        color: $secondary-color-3;
+    }
+    .form-section{
+        input{
+            background-color: #f8f9ff;
+            padding: 29px;
+            color: $secondary-color-3;
+
+            @media #{$tab_device}{
+                margin-top: 30px;
+            }
+            @media #{$large_mobile}{
+                margin-top: 30px;
+            }
+        }
+        .form-control:focus{
+            outline: none;
+            box-shadow: none;
+            background-color: #f9f9f9;
+            border-color: $primary-color-1;
+        }
+        .sign-up-btn{
+            @extend %common-btn;
+            margin-top: 25px;
+        }
+    }
+}
+.footer-midel{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    .about-us{
+        .about-title{
+            margin-bottom: 27px;
+            @media #{$small_mobile}{
+                margin-bottom: 12px;
+            } 
+        }
+        .about-content{
+            color: $primary-color-2;
+            font-size: 1rem;
+        }
+        .about-link{
+            margin-top: 23px;
+            li{
+                a{
+                    font-size: 26px;
+                    margin-right: 25px;
+                    i{
+                        color: $primary-color-2;
+                        transition: .4s;
+                    }
+                    &:hover{
+                        i{
+                            color: $primary-color-1;
+                        }
+                    }
+    
+                }
+            }
+            @media #{$small_mobile}{
+                justify-content: center;
+                margin-bottom: 40px;
+            }  
+        }
+    }
+    .company{
+        .com-title{
+            margin-bottom: 27px;
+            @media #{$small_mobile}{
+                margin-bottom: 12px;
+            }  
+        }
+        ul{
+            li{
+                a{
+                    color: $primary-color-2;
+                    transition: .4s;
+                    font-size: 1rem;
+                    margin-bottom: 8px;
+                    display: inline-block;
+                    &:hover{
+                        color: $primary-color-1;
+                    }
+                }
+            }
+        }
+        @media #{$small_mobile}{
+            justify-content: center;
+            margin-bottom: 40px;
+        }  
+    }
+    .ess-link{
+        .ess-title{
+            margin-bottom: 27px;
+            @media #{$small_mobile}{
+                margin-bottom: 12px;
+            } 
+        }
+        ul{
+            li{
+                a{
+                    color: $primary-color-2;
+                    transition: .4s;
+                    font-size: 1rem;
+                    margin-bottom: 8px;
+                    display: inline-block;
+                    &:hover{
+                        color: $primary-color-1;
+                    }
+                }
+            }
+        }
+        @media #{$small_mobile}{
+            justify-content: center;
+            margin-bottom: 40px;
+        } 
+    }
+    .let-chat{
+        .let-title{
+            @media #{$small_mobile}{
+                margin-bottom: 12px;
+                span{
+                    display: block;
+                }
+            } 
+        }
+        .let-btn{
+            @extend %common-btn;
+            margin-top: 17px;
+            background-color: $secondary-color-5;
+            &:hover{
+                background-color: $primary-color-1;
+            }
+            @media #{$medium_device}{
+                padding: 9px 35px;
+            }
+        }
+    }
+    @media #{$small_mobile}{
+        text-align: center;
+    }
+}
+.footer-bottom{
+    border-top: 1px solid #686363;
+    .copy-rit{
+        padding-top: 20px;
+        font-size: 1.125rem;
+        color: $primary-color-2;
+    }
+}
+.pt-ls-30{
+    @media #{$tab_device}{
+        padding-top: 35px;
+    }
+    @media #{$large_mobile}{
+        padding-top: 35px;
+    }
+
+}

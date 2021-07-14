@@ -1,0 +1,67 @@
+.ken-work{
+    background-image: url(../img/work-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 936px;
+    @media #{$big_screen}{
+        height: 970px;
+    }
+    @media #{$small_mobile}{
+        height: 680px;
+    }
+}
+.pt-lg-300{
+    padding-top: 300px;
+    @media #{$tab_device}{
+        padding-top: 200px;
+    }
+    @media #{$large_mobile}{
+        padding-top: 200px;
+    }
+    @media #{$small_mobile}{
+        padding-top: 150px;
+    }
+}
+.work-img{
+    margin-left: -165px;
+    @media #{$large_small}{
+        margin-left: 0px;
+    }
+    @media #{$tab_device}{
+        display: none;
+    }
+    @media #{$large_mobile}{
+        display: none;
+    }
+    @media #{$small_mobile}{
+        display: none;
+    }
+
+}
+.work-text{
+    
+    .work-title{
+        margin-bottom: 24px;
+    
+    }
+    .work-btn{
+        @extend %common-btn;
+        margin-top: 25px;
+        
+    }
+    .work-content{
+        font-size: 1.25;
+        font-weight: $font_semi_bold;
+        @media #{$small_mobile}{
+            font-size: 1rem;
+            padding: 12px;
+        }
+    }
+    @media #{$small_mobile}{
+        text-align: center;
+    }
+}
+.pb-lg-45{
+    padding-bottom: 25px;
+}

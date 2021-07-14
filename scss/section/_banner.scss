@@ -1,0 +1,24 @@
+.ken-banner{
+    background-image: url(../img/banner-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1260px;
+    @media #{$large_mobile}{
+        height: 900px;
+    }
+    @media #{$small_mobile}{
+        height: 890px;
+    }
+}
+.banner-text{
+    padding: 156px 50px 45px;
+    .banner-title{
+        padding: 0px 30px;
+        margin-bottom: 1.25rem;
+    }
+    .banner-btn{
+        @extend %common-btn;
+        margin-top: 1.625rem;
+    }
+}
