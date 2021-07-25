@@ -44,6 +44,12 @@
     @media #{$small_mobile}{
         display: none;
     }
+    @media #{$large_small}{
+        margin-left: 0px;
+    }
+    @media #{$big_screen}{
+        margin-left: 0px;
+    }
 
 }
 .work-text{

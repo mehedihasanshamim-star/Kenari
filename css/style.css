@@ -588,6 +588,18 @@ button:focus {
   }
 }
 
+@media only screen and (min-width: 420px) and (max-width: 1200px) {
+  .work-img {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .work-img {
+    margin-left: 0px;
+  }
+}
+
 .work-text .work-title {
   margin-bottom: 24px;
 }
