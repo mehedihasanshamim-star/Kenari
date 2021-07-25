@@ -37,4 +37,7 @@
     @media #{$tab_device}{
         text-align: center;
     }
+    @media #{$big_screen}{
+        margin-right: 0;
+    }
 }

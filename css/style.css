@@ -696,6 +696,12 @@ button:focus {
   }
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .make-img {
+    margin-right: 0;
+  }
+}
+
 .contact-us {
   background-image: url(../img/contact-bg.png);
   background-size: cover;
