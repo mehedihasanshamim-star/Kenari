@@ -5,13 +5,15 @@
     background-repeat: no-repeat;
     height: 1238px;
     @media #{$tab_device}{
-       height: 1750px;
+       height: 1700px;
     }
     @media #{$large_mobile}{
-        height: 1600px;
+        height: 1650px;
+        padding-top: 30px;
     }
     @media #{$small_mobile}{
-        height: 1450px;
+        height: 1580px;
+        padding-top: 50px;
     }
 }
 .pt-lg-340{
@@ -55,6 +57,12 @@
         margin-bottom: 25px;
         padding: 23px;
         background-color: #f9f9f9;
+        @media #{$small_mobile}{
+            margin-bottom: 12px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
     }
     .form-control:focus{
         outline: none;
@@ -67,8 +75,23 @@
         margin-bottom: 25px;
         height: 187px;
         background-color: #f9f9f9;
+        @media #{$small_mobile}{
+            margin-bottom: 12px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
     }
     .form-btn{
         @extend %common-btn;
+    }
+    @media #{$tab_device}{
+        margin-top: 50px;
+    }
+    @media #{$large_mobile}{
+        margin-top: 50px;
+    }
+    @media #{$small_mobile}{
+        margin-top: 50px;
     }
 }

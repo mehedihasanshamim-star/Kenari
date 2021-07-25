@@ -22,14 +22,14 @@
     .choose-text{
         color: $secondary-color-3;
     }
-    @media #{$large_mobile}{
-        margin-bottom: 55px;
-    }
-    @media #{$small_mobile}{
-        margin-bottom: 50px;
+    
+}
+@media #{$large_small}{
+    .mb-70{
+        margin-bottom: 70px;
     }
 }
-@media #{$tab_device}{
+@media #{$medium_device}{
     .pt-md-40{
         padding-top: 40px;
     }

@@ -1,45 +1,65 @@
-.ken-header{
+.ken-header {
     position: absolute;
     top: 0;
     width: 100%;
 }
 
-.navbar{
+.navbar {
     padding-top: 28px;
     padding-bottom: 34px;
-    .navbar-nav{
-        .nav-item{
-            .nav-link{
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
                 font-weight: $font_bold;
                 color: $primary-color-2;
                 padding: 0.938rem;
                 transition: .4s;
-                &:hover{
+
+                &:hover {
                     color: $primary-color-1;
                 }
             }
         }
+
+        @media #{$tab} {
+            background-color: #fff;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
-    .header-btn{
-        .btn-custom{
+
+    .header-btn {
+        .btn-custom {
             @extend %common-btn;
             background-color: $secondary-color-1;
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 background-color: $secondary-color-2;
-                &:hover{
+
+                &:hover {
                     background-color: $secondary-color-5;
                 }
             }
         }
-        @media #{$small_mobile}{
+
+        @media #{$small_mobile} {
             text-align: center;
         }
-        @media #{$large_mobile}{
+
+        @media #{$large_mobile} {
             text-align: center;
         }
-        @media #{$tab_device}{
+
+        @media #{$tab_device} {
             text-align: center;
+        }
+
+        @media #{$tab} {
+            display: none;
         }
     }
+
 }
-  

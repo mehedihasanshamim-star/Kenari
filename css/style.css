@@ -59,15 +59,49 @@ html {
 }
 
 .navbar .navbar-toggler {
-  border: 2px solid #eb7d4b;
+  border: none;
 }
 
 .navbar .navbar-toggler span {
   display: block;
-  height: 2px;
+  height: 3px;
   width: 40px;
   background-color: #eb7d4b;
-  margin: 5px;
+  margin: 7px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.navbar .navbar-toggler span:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 13% 0%;
+          transform-origin: 13% 0%;
+}
+
+.navbar .navbar-toggler span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.navbar .navbar-toggler span:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 12% 150%;
+          transform-origin: 12% 150%;
+}
+
+.navbar-toggler.collapsed span:nth-of-type(1) {
+  -webkit-transform: rotate(0) !important;
+          transform: rotate(0) !important;
+}
+
+.navbar-toggler.collapsed span:nth-of-type(2) {
+  opacity: 1 !important;
+}
+
+.navbar-toggler.collapsed span:nth-of-type(3) {
+  -webkit-transform: rotate(0) !important;
+          transform: rotate(0) !important;
 }
 
 ul.navbar-nav.m-auto {
@@ -150,7 +184,7 @@ h1 {
 
 @media only screen and (min-width: 420px) and (max-width: 575px) {
   h1 {
-    font-size: 1.625rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -173,13 +207,13 @@ h2 {
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   h2 {
-    font-size: 1.875rem;
+    font-size: 2.25rem;
   }
 }
 
 @media only screen and (min-width: 420px) and (max-width: 575px) {
   h2 {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -207,7 +241,7 @@ h4 {
 
 @media only screen and (min-width: 420px) and (max-width: 575px) {
   h4 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -277,6 +311,18 @@ button:focus {
   background-color: #ffd643;
 }
 
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .navbar .header-btn .btn-custom, .banner-text .banner-btn, .work-text .work-btn, .make-text .make-btn, .contact-form .form-btn, .sign-up-box .form-section .sign-up-btn, .footer-midel .let-chat .let-btn {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .navbar .header-btn .btn-custom, .banner-text .banner-btn, .work-text .work-btn, .make-text .make-btn, .contact-form .form-btn, .sign-up-box .form-section .sign-up-btn, .footer-midel .let-chat .let-btn {
+    font-size: 1rem;
+  }
+}
+
 .ken-header {
   position: absolute;
   top: 0;
@@ -298,6 +344,22 @@ button:focus {
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #ff3162;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    background-color: #fff;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .navbar .header-btn .btn-custom {
@@ -330,12 +392,19 @@ button:focus {
   }
 }
 
+@media (max-width: 991px) {
+  .navbar .header-btn {
+    display: none;
+  }
+}
+
 .ken-banner {
   background-image: url(../img/banner-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 1260px;
+  padding-top: 156px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -346,12 +415,19 @@ button:focus {
 
 @media only screen and (min-width: 420px) and (max-width: 575px) {
   .ken-banner {
-    height: 890px;
+    height: 850px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .ken-banner {
+    height: 1060px;
   }
 }
 
 .banner-text {
-  padding: 156px 50px 45px;
+  padding: 0 50px;
+  padding-bottom: 45px;
 }
 
 .banner-text .banner-title {
@@ -359,8 +435,28 @@ button:focus {
   margin-bottom: 1.25rem;
 }
 
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .banner-text .banner-title {
+    padding: 0px 12px;
+  }
+}
+
 .banner-text .banner-btn {
   margin-top: 1.625rem;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .banner-text {
+    padding: 0 15px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .banner-text {
+    padding: 0 10px;
+    padding-bottom: 30px;
+  }
 }
 
 .ken-choose-us {
@@ -397,19 +493,13 @@ button:focus {
   color: #6e819e;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  .single-choose {
-    margin-bottom: 55px;
+@media only screen and (min-width: 420px) and (max-width: 1200px) {
+  .mb-70 {
+    margin-bottom: 70px;
   }
 }
 
-@media only screen and (min-width: 420px) and (max-width: 575px) {
-  .single-choose {
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .pt-md-40 {
     padding-top: 40px;
   }
@@ -426,6 +516,18 @@ button:focus {
 @media only screen and (min-width: 1200px) and (max-width: 1441px) {
   .ken-work {
     height: 970px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .ken-work {
+    height: 1300px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .ken-work {
+    height: 800px;
   }
 }
 
@@ -469,7 +571,8 @@ button:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .work-img {
-    display: none;
+    display: block;
+    margin-bottom: 50px;
   }
 }
 
@@ -494,8 +597,15 @@ button:focus {
 }
 
 .work-text .work-content {
-  font-size: 1.25;
+  font-size: 1.25rem;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .work-text .work-content {
+    font-size: 1.125rem;
+    padding: 12px;
+  }
 }
 
 @media only screen and (min-width: 420px) and (max-width: 575px) {
@@ -584,19 +694,21 @@ button:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .contact-us {
-    height: 1750px;
+    height: 1700px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .contact-us {
-    height: 1600px;
+    height: 1650px;
+    padding-top: 30px;
   }
 }
 
 @media only screen and (min-width: 420px) and (max-width: 575px) {
   .contact-us {
-    height: 1450px;
+    height: 1580px;
+    padding-top: 50px;
   }
 }
 
@@ -667,6 +779,18 @@ button:focus {
   background-color: #f9f9f9;
 }
 
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .contact-form input {
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .contact-form input {
+    margin-bottom: 20px;
+  }
+}
+
 .contact-form .form-control:focus {
   outline: none;
   -webkit-box-shadow: none;
@@ -680,6 +804,36 @@ button:focus {
   margin-bottom: 25px;
   height: 187px;
   background-color: #f9f9f9;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .contact-form textarea {
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .contact-form textarea {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact-form {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .contact-form {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .contact-form {
+    margin-top: 50px;
+  }
 }
 
 .ken-footer {
@@ -722,6 +876,24 @@ button:focus {
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .sign-up-box .sign-up-title {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .sign-up-box .sign-up-title {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .sign-up-box .sign-up-title {
+    margin-bottom: 25px;
+  }
+}
+
 .sign-up-box .sign-up-content {
   font-size: 1rem;
   color: #6e819e;
@@ -741,7 +913,13 @@ button:focus {
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .sign-up-box .form-section input {
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .sign-up-box .form-section input {
+    margin-top: 10px;
   }
 }
 
@@ -755,6 +933,18 @@ button:focus {
 
 .sign-up-box .form-section .sign-up-btn {
   margin-top: 25px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .sign-up-box .form-section .sign-up-btn {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 575px) {
+  .sign-up-box .form-section .sign-up-btn {
+    margin-top: 10px;
+  }
 }
 
 .footer-midel {
@@ -873,9 +1063,10 @@ button:focus {
   .footer-midel .let-chat .let-title {
     margin-bottom: 12px;
   }
-  .footer-midel .let-chat .let-title span {
-    display: block;
-  }
+}
+
+.footer-midel .let-chat .let-title a {
+  color: #0b1c36;
 }
 
 .footer-midel .let-chat .let-btn {

@@ -7,6 +7,12 @@
     @media #{$big_screen}{
         height: 970px;
     }
+    @media #{$tab_device}{
+        height: 1300px;
+    }
+    @media #{$large_mobile}{
+        height: 800px;
+    }
     @media #{$small_mobile}{
         height: 680px;
     }
@@ -29,7 +35,8 @@
         margin-left: 0px;
     }
     @media #{$tab_device}{
-        display: none;
+        display: block;
+        margin-bottom: 50px;
     }
     @media #{$large_mobile}{
         display: none;
@@ -51,8 +58,12 @@
         
     }
     .work-content{
-        font-size: 1.25;
+        font-size: 1.25rem;
         font-weight: $font_semi_bold;
+        @media #{$large_mobile}{
+            font-size: 1.125rem;
+            padding: 12px;
+        }
         @media #{$small_mobile}{
             font-size: 1rem;
             padding: 12px;

@@ -19,4 +19,10 @@ button:focus {
     &:hover{
         background-color: $secondary-color-5;
     }
+    @media #{$small_mobile}{
+        font-size: 0.875rem;
+    }
+    @media #{$large_mobile}{
+        font-size: 1rem;
+    }
 }

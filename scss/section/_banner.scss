@@ -4,21 +4,37 @@
     background-position: center center;
     background-repeat: no-repeat;
     height: 1260px;
+    padding-top: 156px;
     @media #{$large_mobile}{
         height: 900px;
     }
     @media #{$small_mobile}{
-        height: 890px;
+        height: 850px;
+    }
+    @media #{$tab_device}{
+        height: 1060px;
     }
 }
 .banner-text{
-    padding: 156px 50px 45px;
+    padding: 0 50px;
+    padding-bottom: 45px;
     .banner-title{
         padding: 0px 30px;
         margin-bottom: 1.25rem;
+    @media #{$small_mobile}{
+        padding: 0px 12px;
+    }
     }
     .banner-btn{
         @extend %common-btn;
         margin-top: 1.625rem;
+    }
+    @media #{$small_mobile}{
+        padding: 0 15px;
+        padding-bottom: 30px;
+    }
+    @media #{$large_mobile}{
+        padding: 0 10px;
+        padding-bottom: 30px;
     }
 }

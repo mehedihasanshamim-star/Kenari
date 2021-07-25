@@ -29,16 +29,40 @@ body {
 html{
     scroll-behavior: smooth;
 }
+
 .navbar .navbar-toggler{
-    border: 2px solid #eb7d4b;
+    border: none;
     span{
         display: block;
-        height: 2px;
+        height: 3px;
         width: 40px;
         background-color: #eb7d4b;
-        margin: 5px;
+        margin: 7px;
+        transition: .4s;
+        &:nth-of-type(1){
+            transform: rotate(45deg);
+            transform-origin: 13% 0%;
+        }
+        &:nth-of-type(2){
+            opacity: 0;
+        }
+        &:nth-of-type(3){
+            transform: rotate(-45deg);
+            transform-origin: 12% 150%;
+        }
     }
 }
+.navbar-toggler.collapsed span:nth-of-type(1){
+    transform: rotate(0) !important;
+}
+.navbar-toggler.collapsed span:nth-of-type(2){
+    opacity: 1 !important;
+}
+.navbar-toggler.collapsed span:nth-of-type(3){
+    transform: rotate(0) !important;
+}
+
+
 ul.navbar-nav.m-auto {
     text-align: center;
 }
@@ -103,7 +127,7 @@ h1 {
         font-size: 2.25rem;
     }
     @media #{$small_mobile}{
-        font-size: 1.625rem;
+        font-size: 2.25rem;
     }
 }
 
@@ -117,10 +141,10 @@ h2 {
         font-size: 2.5rem;
     }
     @media #{$large_mobile}{
-        font-size: 1.875rem;
+        font-size: 2.25rem;
     }
     @media #{$small_mobile}{
-        font-size: 1.25rem;
+        font-size: 2.25rem;
     }
 }
 
@@ -139,7 +163,7 @@ h4 {
     font-size: $h4_font_size;
     font-weight:$font_extra_bold;
     @media #{$small_mobile}{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 h5 {

@@ -24,6 +24,15 @@
     
     .sign-up-title{
         margin-bottom: 40px;
+        @media #{$small_mobile}{
+            margin-bottom: 10px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 25px;
+        }
     }
     .sign-up-content{
         font-size: 1rem;
@@ -39,7 +48,10 @@
                 margin-top: 30px;
             }
             @media #{$large_mobile}{
-                margin-top: 30px;
+                margin-top: 20px;
+            }
+            @media #{$small_mobile}{
+                margin-top: 10px;
             }
         }
         .form-control:focus{
@@ -51,6 +63,12 @@
         .sign-up-btn{
             @extend %common-btn;
             margin-top: 25px;
+            @media #{$large_mobile}{
+                margin-top: 20px;
+            }
+            @media #{$small_mobile}{
+                margin-top: 10px;
+            }
         }
     }
 }
@@ -148,10 +166,10 @@
         .let-title{
             @media #{$small_mobile}{
                 margin-bottom: 12px;
-                span{
-                    display: block;
-                }
             } 
+            a{
+                color: $primary-color-2;
+            }
         }
         .let-btn{
             @extend %common-btn;
